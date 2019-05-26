@@ -1,0 +1,18 @@
+
+server:
+  port: 8080
+spring:
+  cloud:
+    config:
+      server:
+        default-application-name: config-server
+        git:
+          # git仓库地址
+          uri: https://github.com/zhming/config-repo
+          # git仓库子目录，默认为空时表示仓库根目录
+          search-paths: subdir
+          # 访问git仓库的用户密码 如果Git仓库为公开仓库，可以不填写用户名和密码，如果是私有仓库需要填写
+          username: zhming.m@gmail.com
+          password: 2250344?q
+      # 分支，分支不存在时，默认为master
+      label: master
