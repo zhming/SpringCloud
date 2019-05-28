@@ -1,0 +1,10 @@
+server:
+  port: 8080
+mybatis:
+  type-aliases-package: com.example.mybatis.model
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/equipment_db
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
